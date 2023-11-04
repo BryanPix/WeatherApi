@@ -107,7 +107,7 @@ h2 {
 .moveMain {
   position: relative;
   width: 50vw;
-  height: 60vh;
+  height: 70vh;
   top: -40%;
   left: 20vw;
   border-radius: 1rem;
@@ -129,6 +129,7 @@ h2 {
 
 span {
   font-weight: bold;
+  display: block;
 }
 
 @media (max-width: 1199px) {

@@ -7,6 +7,8 @@ btnSearchTwo.style.visibility="hidden";
 btnSearchOne.addEventListener('click', function() {
   btnSearchOne.style.visibility="hidden";
   btnSearchTwo.style.visibility="visible";
+  document.querySelector('.moveMain').style.visibility="hidden";
+
 });
 
 search.addEventListener('keyup', function(event) {
