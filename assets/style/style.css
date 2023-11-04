@@ -47,7 +47,7 @@ body {
   font-weight: 100;
 }
 
-.btn-search {
+.btn-search-one, .btn-search-two {
   width: 50px;
   height: 50px;
   border-style: none;
@@ -63,7 +63,7 @@ body {
   pointer-events: painted;
 }
 
-.btn-search:focus ~ .input-search {
+.btn-search-two:focus ~ .input-search {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
@@ -111,7 +111,7 @@ h2 {
   top: -40%;
   left: 20vw;
   border-radius: 1rem;
-  background: url("../img/blueSky.gif") no-repeat;
+  background: url("/blueSky.gif") no-repeat;
   background-size: cover;
   visibility: hidden;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -133,11 +133,11 @@ span {
 
 @media (max-width: 1199px) {
   .moveMain {
-    height: 90vh;
+    height: 70vh;
   }
 }
 @media (max-width: 799px) {
   .moveMain {
-    height: 138vh;
+    height: 120vh;
   }
 }/*# sourceMappingURL=style.css.map */

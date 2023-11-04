@@ -1,7 +1,28 @@
+let btnSearchOne = document.querySelector('.btn-search-one');
+let btnSearchTwo = document.querySelector('.btn-search-two');
 let search = document.querySelector('.input-search');
+
+btnSearchTwo.style.visibility="hidden";
+
+btnSearchOne.addEventListener('click', function() {
+  btnSearchOne.style.visibility="hidden";
+  btnSearchTwo.style.visibility="visible";
+});
+
 search.addEventListener('keyup', function(event) {
 
     if (event.key === "Enter") {
+      event.preventDefault();
+      fetchData();
+      document.querySelector('.moveDiv').style.bottom="40vh";
+      document.querySelector('.moveMain').style.bottom="60vh";
+      document.querySelector('.moveMain').style.visibility="visible";
+    }
+  });
+btnSearchTwo.addEventListener('click', function(event) {
+
+    if ('click') {
+      console.log('1');
       event.preventDefault();
       fetchData();
       document.querySelector('.moveDiv').style.bottom="40vh";
@@ -26,11 +47,9 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityValue}&units=met
 
 .then (response => response.json())
 .then (data => {
-    console.log(data);
     let container = document.querySelector('.main-container');
     
     for(const city of data.list) 
-    console.log(city.dt.txt);
     container.innerHTML = `
     <h2>${data.city.name}</h2>
     <div class="weatherDiv">
