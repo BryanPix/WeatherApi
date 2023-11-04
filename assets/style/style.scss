@@ -82,12 +82,49 @@ $background: #B1740F;
     font-size: 4vw;
     width: fit-content;
     color: $primary;
+    
+}
+h2{
+  display: grid;
+  text-align: center;
+  font-size: 5vh;
+  color: $primary;
 }
 .moveMain{
   position: relative;
-  width: fit-content;
-  height: fit-content;
-  top: -60%;
-  left: 42vw;
+  width: 50vw;
+  height: 60vh;
+  top: -40%;
+  left: 20vw;
+  border-radius: 1rem;
   background: url('/assets/img/blueSky.gif') no-repeat;
+  background-size: cover;
+  visibility: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.weatherDiv{
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  float: left;
+  width: 8.5rem;
+  height: 9rem;
+  margin: 2rem;
+}
+
+span{
+  font-weight: bold;
+}
+
+@media (max-width:1199px){
+  .moveMain{
+    height: 90vh;
+
+  }
+}
+@media (max-width:799px){
+  .moveMain{
+    height: 138vh;
+
+  }
 }
