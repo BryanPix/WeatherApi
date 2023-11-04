@@ -22,7 +22,6 @@ search.addEventListener('keyup', function(event) {
 btnSearchTwo.addEventListener('click', function(event) {
 
     if ('click') {
-      console.log('1');
       event.preventDefault();
       fetchData();
       document.querySelector('.moveDiv').style.bottom="40vh";
