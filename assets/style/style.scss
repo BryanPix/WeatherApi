@@ -104,11 +104,12 @@ h2{
   top: -40%;
   left: 20vw;
   border-radius: 1rem;
-  background: url('/blueSky.gif') no-repeat;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: cover;
   visibility: hidden;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
 .weatherDiv{
   position: relative;
   border-radius: 1rem;
@@ -135,3 +136,4 @@ span{
 
   }
 }
+
